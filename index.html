@@ -7,6 +7,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>  <!--a-scene means a 3d scene-->
      <a-marker type="pattern" preset="custom" url="/whynot/pattern-markers.patt">
+       
          
        <a-entity
           position="0 -2 -1"
@@ -25,6 +26,17 @@
          </a-box>
        
         </a-marker>
+      
+      <a-marker type="pattern" preset="custom" url="/whynot/pattern-su.patt">
+        
+        <a-entity
+          position="0 -2 -1"
+          scale="0.01 0.01 0.01"
+          rotation="0 0 0"
+          gltf-model="/whynot/whynotworking.glb"
+                    ></a-entity>
+        </a-marker>
+        
         <a-entity camera></a-entity>
       </a-scene>
     </body>
